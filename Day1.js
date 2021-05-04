@@ -1,23 +1,23 @@
 // How to find largest and smallest number from integer array ?
 
 function findLargestNumber(arr) {
-  if(let i = 0; i < arr.length; i++) {
-    let large = 0
-    if(arr[i] > large) {
+  let large = 0
+  for(let i = 0; i < arr.length; i++) {
+    if(parseFloat(arr[i]) > parseFloat(large)) {
       large = arr[i]
     }
-    return large
   }
+  return large
 }
 
 function findSmallestNumber(arr) {
-  if(let i = 0; i < arr.length; i++) {
-    let small = 0
-    if(arr[i] < small) {
+  let small = 0
+  for(let i = 0; i < arr.length; i++) {
+    if(parseFloat(arr[i]) < parseFloat(small)) {
       small = arr[i]
     }
-    return small
   }
+  return small
 }
 
 
