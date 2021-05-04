@@ -21,7 +21,7 @@ function findSmallestNumber(arr) {
 }
 
 
-// ES6
+// ES6 using spread operator and arrow functions
 
 let largestNumber = arr => Math.max(...arr)
 let smallestNumber = arr => Math.min(...arr)
